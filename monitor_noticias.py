@@ -91,18 +91,29 @@ def extrair_noticias(html: str) -> list[dict]:
             continue
         vistos.add(link)
 
-        # O resumo geralmente é o próximo parágrafo "de verdade" depois do título
-        # (pulamos parágrafos curtos, que costumam ser metadados de autor/data)
+        # O resumo geralmente é o próximo parágrafo "de verdade" depois do título.
+        # Pulamos parágrafos curtos (metadados de autor/data/"compartilhe"), mas
+        # com uma margem maior de tentativas e um limite mais baixo, para não
+        # perder resumos legítimos que comecem com frases curtas ou citações.
         resumo = ""
         proximo = h4.find_next("p")
         tentativas = 0
-        while proximo and tentativas < 4:
+        candidatos = []  # guarda parágrafos vistos, mesmo que curtos, como fallback
+        while proximo and tentativas < 8:
             texto_p = proximo.get_text(strip=True)
-            if len(texto_p) > 60:
+            if texto_p:
+                candidatos.append(texto_p)
+            if len(texto_p) > 40:
                 resumo = texto_p
                 break
             proximo = proximo.find_next("p")
             tentativas += 1
+
+        # Fallback: se nenhum parágrafo "longo" foi achado nas tentativas,
+        # mas existem candidatos curtos, junta os 2 primeiros em vez de
+        # deixar o resumo vazio (melhor ter algo a filtrar do que nada).
+        if not resumo and candidatos:
+            resumo = " ".join(candidatos[:2])
 
         noticias.append({
             "titulo": titulo,
