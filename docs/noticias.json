@@ -1,13 +1,29 @@
 {
-  "atualizado_em": "2026-06-17T09:00:00+00:00",
-  "ultima_verificacao": "2026-06-18T12:15:46.695284+00:00",
+  "atualizado_em": "2026-06-18T12:28:47.636448+00:00",
+  "ultima_verificacao": "2026-06-18T12:28:47.636470+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
-    "leo xiv"
+    "leo xiv",
+    "LGBT",
+    "Viganò"
   ],
-  "total_noticias": 2,
+  "total_noticias": 4,
   "noticias": [
+    {
+      "titulo": "Arcebispo de Milão oferece missa para grupo LGBT na festa do Sagrado Coração",
+      "titulo_original": "Archbishop of Milan Offers Mass For LGBT Group On Feast Of Sacred Heart",
+      "resumo": "",
+      "link": "https://www.complicitclergy.com/2026/06/17/archbishop-of-milan-offers-mass-for-lgbt-group-on-feast-of-sacred-heart/",
+      "adicionado_em": "2026-06-18T12:28:45.940958+00:00"
+    },
+    {
+      "titulo": "A IMPRESSIONANTE carta de Viganò para Leo",
+      "titulo_original": "Viganò’s STUNNING Letter to Leo",
+      "resumo": "",
+      "link": "https://www.complicitclergy.com/2026/06/16/viganos-stunning-letter-to-leo/",
+      "adicionado_em": "2026-06-18T12:28:47.136296+00:00"
+    },
     {
       "titulo": "Papa Leão defende imigrantes ilegais no 'Cais da Vergonha' na Espanha",
       "titulo_original": "Pope Leo Defends Illegal Immigrants at 'Dock of Shame' in Spain",
