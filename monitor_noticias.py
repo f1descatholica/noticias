@@ -147,6 +147,16 @@ def main():
     print(f"[{datetime.now():%Y-%m-%d %H:%M}] Baixando página: {URL_NOTICIAS}")
     html = baixar_pagina(URL_NOTICIAS)
 
+    # Diagnóstico: ajuda a identificar se o site está bloqueando o robô
+    # (ex: Cloudflare, captcha) em vez de retornar a página real.
+    print(f"  -> HTML recebido: {len(html)} caracteres.")
+    print(f"  -> Primeiros 300 caracteres do HTML recebido:")
+    print("  " + "-" * 60)
+    print(html[:300].replace("\n", " "))
+    print("  " + "-" * 60)
+    if "cloudflare" in html.lower() or "captcha" in html.lower() or "checking your browser" in html.lower():
+        print("  [AVISO] O HTML recebido parece ser uma página de bloqueio/desafio anti-bot, não o conteúdo real do site.")
+
     print("Extraindo notícias da página...")
     todas = extrair_noticias(html)
     print(f"  -> {len(todas)} notícias encontradas na página.")
