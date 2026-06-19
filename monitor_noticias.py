@@ -169,7 +169,7 @@ def main():
         })
         time.sleep(0.5)
 
-lista_final = traduzidas_novas
+    lista_final = traduzidas_novas
 
     saida = {
         "atualizado_em": datetime.now(timezone.utc).isoformat(),
