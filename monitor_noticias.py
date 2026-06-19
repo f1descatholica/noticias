@@ -1,14 +1,12 @@
 #!/usr/bin/env python3
 """
-Monitor de Notícias Católicas -> JSON para o Blogger
-------------------------------------------------------
-Lê múltiplos feeds RSS, filtra por palavras-chave,
-traduz título + resumo para português (Google Translate
-gratuito, via deep-translator, sem precisar de chave de API),
-e ACUMULA o resultado em `docs/noticias.json`.
-
-Notícias antigas nunca são apagadas — só são adicionadas
-as novas que ainda não estavam lá.
+Monitor de Notícias - Complicit Clergy -> JSON para o Blogger
+----------------------------------------------------------------
+Lê a página de notícias do site, filtra por palavras-chave,
+traduz título + resumo para português (Google Translate gratuito,
+via deep-translator, sem precisar de chave de API), e ACUMULA o
+resultado em `docs/noticias.json` — notícias antigas nunca são
+apagadas, só são adicionadas as novas que ainda não estavam lá.
 
 Esse JSON é publicado via GitHub Pages e consumido por um
 JavaScript dentro de uma página do Blogger (ver blogger_widget.html).
@@ -19,32 +17,16 @@ import sys
 import json
 import time
 import requests
-import xml.etree.ElementTree as ET
+from bs4 import BeautifulSoup
 from pathlib import Path
 from datetime import datetime, timezone
 from deep_translator import GoogleTranslator
 
 # ===================== CONFIGURAÇÃO =====================
 
-# Lista de feeds RSS a monitorar.
-# Para adicionar ou remover um site, edite apenas esta lista.
-FEEDS = [
-    {
-        "nome": "Rorate Caeli",
-        "url": "http://rorate-caeli.blogspot.com/feeds/posts/default?alt=rss",
-    },
-    {
-        "nome": "Radical Fidelity",
-        "url": "https://radicalfidelity.substack.com/feed",
-    },
-    {
-        "nome": "Traditionsanity",
-        "url": "https://www.traditionsanity.com/feed/",
-    },
-]
+URL_NOTICIAS = "https://www.complicitclergy.com/news/"
 
-# Palavras-chave em INGLÊS (idioma original dos sites).
-# O filtro é case-insensitive e busca no título + resumo de cada post.
+# Palavras-chave em INGLÊS (idioma original do site).
 PALAVRAS_CHAVE = [
     "pope leo",
     "leo xiv",
@@ -59,8 +41,7 @@ HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
         "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-    ),
-    "Accept": "application/rss+xml, application/xml, text/xml, */*",
+    )
 }
 
 _tradutor = GoogleTranslator(source="en", target="pt")
@@ -80,113 +61,68 @@ def traduzir(texto: str) -> str:
         return texto
 
 
-# ===================== LEITURA DE FEED RSS =====================
+# ===================== COLETA DA PÁGINA =====================
 
-# Namespaces comuns em feeds RSS/Atom
-NS = {
-    "content": "http://purl.org/rss/1.0/modules/content/",
-    "dc":      "http://purl.org/dc/elements/1.1/",
-    "atom":    "http://www.w3.org/2005/Atom",
-}
-
-
-def limpar_html(texto: str) -> str:
-    """Remove tags HTML de um texto e normaliza espaços."""
-    texto = re.sub(r"<[^>]+>", " ", texto)
-    texto = re.sub(r"\s+", " ", texto)
-    return texto.strip()
-
-
-def truncar(texto: str, max_chars: int = 400) -> str:
-    """Trunca o texto no limite de caracteres, quebrando em palavra inteira."""
-    if len(texto) <= max_chars:
-        return texto
-    truncado = texto[:max_chars].rsplit(" ", 1)[0]
-    return truncado + "…"
-
-
-def baixar_feed(url: str) -> str:
+def baixar_pagina(url: str) -> str:
     resp = requests.get(url, headers=HEADERS, timeout=20)
     resp.raise_for_status()
     return resp.text
 
 
-def extrair_itens_feed(xml_texto: str, nome_feed: str) -> list[dict]:
+def extrair_noticias(html: str) -> list[dict]:
     """
-    Parseia um feed RSS 2.0 ou Atom e retorna lista de itens.
-    Cada item: {titulo, link, resumo, fonte}
+    Percorre o HTML e extrai uma lista de notícias.
+    Cada notícia: {titulo, link, resumo}
     """
-    itens = []
-    try:
-        root = ET.fromstring(xml_texto)
-    except ET.ParseError as e:
-        print(f"  [erro] falha ao parsear XML do feed '{nome_feed}': {e}")
-        return []
+    soup = BeautifulSoup(html, "html.parser")
+    noticias = []
+    vistos = set()
 
-    # Detecta se é RSS 2.0 (tem <channel><item>) ou Atom (tem <entry>)
-    tag_raiz = root.tag.lower()
+    # Os títulos das notícias estão em tags h4, cada uma com um <a href="...">
+    for h4 in soup.find_all("h4"):
+        link_tag = h4.find("a", href=True)
+        if not link_tag:
+            continue
 
-    ns_atom = "{http://www.w3.org/2005/Atom}"
-    is_atom = "feed" in root.tag  # cobre <feed> e <{ns}feed>
+        titulo = link_tag.get_text(strip=True)
+        link = link_tag["href"]
 
-    if is_atom:
-        entradas = root.findall(f"{ns_atom}entry")
-        if not entradas:
-            entradas = root.findall("entry")
-        for entry in entradas:
-            titulo_el = entry.find(f"{ns_atom}title")
-            if titulo_el is None:
-                titulo_el = entry.find("title")
-            link_el = entry.find(f"{ns_atom}link")
-            if link_el is None:
-                link_el = entry.find("link")
-            resumo_el = entry.find(f"{ns_atom}summary")
-            if resumo_el is None:
-                resumo_el = entry.find("summary")
-            if resumo_el is None:
-                resumo_el = entry.find(f"{ns_atom}content")
-            if resumo_el is None:
-                resumo_el = entry.find("content")
+        if not titulo or link in vistos:
+            continue
+        vistos.add(link)
 
-            titulo = titulo_el.text.strip() if titulo_el is not None and titulo_el.text else ""
-            link   = (link_el.get("href") or link_el.text or "").strip() if link_el is not None else ""
-            resumo_raw = ""
-            if resumo_el is not None:
-                resumo_raw = resumo_el.text or ""
-            resumo = truncar(limpar_html(resumo_raw))
+        # O resumo geralmente é o próximo parágrafo "de verdade" depois do título.
+        # Pulamos parágrafos curtos (metadados de autor/data/"compartilhe"), mas
+        # com uma margem maior de tentativas e um limite mais baixo, para não
+        # perder resumos legítimos que comecem com frases curtas ou citações.
+        resumo = ""
+        proximo = h4.find_next("p")
+        tentativas = 0
+        candidatos = []  # guarda parágrafos vistos, mesmo que curtos, como fallback
+        while proximo and tentativas < 8:
+            texto_p = proximo.get_text(strip=True)
+            if texto_p:
+                candidatos.append(texto_p)
+            if len(texto_p) > 40:
+                resumo = texto_p
+                break
+            proximo = proximo.find_next("p")
+            tentativas += 1
 
-            if titulo and link:
-                itens.append({"titulo": titulo, "link": link, "resumo": resumo, "fonte": nome_feed})
+        # Fallback: se nenhum parágrafo "longo" foi achado nas tentativas,
+        # mas existem candidatos curtos, junta os 2 primeiros em vez de
+        # deixar o resumo vazio (melhor ter algo a filtrar do que nada).
+        if not resumo and candidatos:
+            resumo = " ".join(candidatos[:2])
 
-    else:
-        # RSS 2.0 (Rorate Caeli, Traditionsanity, WordPress em geral)
-        channel = root.find("channel")
-        if channel is None:
-            channel = root
-        for item in channel.findall("item"):
-            titulo_el = item.find("title")
-            link_el   = item.find("link")
-            desc_el   = item.find("description")
-            content_el = item.find("content:encoded", NS)
+        noticias.append({
+            "titulo": titulo,
+            "link": link,
+            "resumo": resumo,
+        })
 
-            titulo = titulo_el.text.strip() if titulo_el is not None and titulo_el.text else ""
-            link   = link_el.text.strip()   if link_el   is not None and link_el.text   else ""
+    return noticias
 
-            # Prefere o conteúdo completo (content:encoded), mas usa description como fallback
-            resumo_raw = ""
-            if content_el is not None and content_el.text:
-                resumo_raw = content_el.text
-            elif desc_el is not None and desc_el.text:
-                resumo_raw = desc_el.text
-            resumo = truncar(limpar_html(resumo_raw))
-
-            if titulo and link:
-                itens.append({"titulo": titulo, "link": link, "resumo": resumo, "fonte": nome_feed})
-
-    return itens
-
-
-# ===================== FILTRO POR PALAVRA-CHAVE =====================
 
 def bate_palavra_chave(noticia: dict, palavras: list[str]) -> bool:
     texto = f"{noticia['titulo']} {noticia['resumo']}".lower()
@@ -208,35 +144,37 @@ def carregar_existente() -> dict:
 # ===================== PROGRAMA PRINCIPAL =====================
 
 def main():
-    print(f"[{datetime.now():%Y-%m-%d %H:%M}] Iniciando monitoramento de {len(FEEDS)} feed(s).")
+    print(f"[{datetime.now():%Y-%m-%d %H:%M}] Baixando página: {URL_NOTICIAS}")
+    html = baixar_pagina(URL_NOTICIAS)
 
-    todos_itens = []
-    for feed in FEEDS:
-        print(f"\nBaixando feed: {feed['nome']} ({feed['url']})")
-        try:
-            xml_texto = baixar_feed(feed["url"])
-            itens = extrair_itens_feed(xml_texto, feed["nome"])
-            print(f"  -> {len(itens)} itens encontrados no feed.")
-            todos_itens.extend(itens)
-        except requests.RequestException as e:
-            print(f"  [erro] não foi possível baixar o feed '{feed['nome']}': {e}")
-            continue
-        time.sleep(0.5)  # pausa entre feeds para não sobrecarregar
+    # Diagnóstico: ajuda a identificar se o site está bloqueando o robô
+    # (ex: Cloudflare, captcha) em vez de retornar a página real.
+    print(f"  -> HTML recebido: {len(html)} caracteres.")
+    print(f"  -> Primeiros 300 caracteres do HTML recebido:")
+    print("  " + "-" * 60)
+    print(html[:300].replace("\n", " "))
+    print("  " + "-" * 60)
+    if "cloudflare" in html.lower() or "captcha" in html.lower() or "checking your browser" in html.lower():
+        print("  [AVISO] O HTML recebido parece ser uma página de bloqueio/desafio anti-bot, não o conteúdo real do site.")
 
-    print(f"\nTotal de itens coletados em todos os feeds: {len(todos_itens)}")
+    print("Extraindo notícias da página...")
+    todas = extrair_noticias(html)
+    print(f"  -> {len(todas)} notícias encontradas na página.")
 
-    filtrados = [n for n in todos_itens if bate_palavra_chave(n, PALAVRAS_CHAVE)]
-    print(f"  -> {len(filtrados)} batem com as palavras-chave: {PALAVRAS_CHAVE}")
+    filtradas = [n for n in todas if bate_palavra_chave(n, PALAVRAS_CHAVE)]
+    print(f"  -> {len(filtradas)} notícias batem com as palavras-chave: {PALAVRAS_CHAVE}")
 
+    # Carrega o que já foi publicado antes, para não perder nada
     dados_existentes = carregar_existente()
     noticias_existentes = dados_existentes.get("noticias", [])
     links_existentes = {n["link"] for n in noticias_existentes}
 
-    novas = [n for n in filtrados if n["link"] not in links_existentes]
+    novas = [n for n in filtradas if n["link"] not in links_existentes]
     print(f"  -> {len(novas)} são novas (ainda não publicadas).")
 
     if not novas:
-        print("Nenhuma notícia nova. JSON permanece como estava.")
+        print("Nenhuma notícia nova hoje. JSON permanece como estava.")
+        # Ainda assim atualiza o timestamp de "última verificação"
         dados_existentes["ultima_verificacao"] = datetime.now(timezone.utc).isoformat()
         ARQUIVO_SAIDA.parent.mkdir(parents=True, exist_ok=True)
         ARQUIVO_SAIDA.write_text(
@@ -247,7 +185,7 @@ def main():
 
     traduzidas_novas = []
     for i, n in enumerate(novas, 1):
-        print(f"Traduzindo {i}/{len(novas)}: [{n['fonte']}] {n['titulo'][:55]}...")
+        print(f"Traduzindo {i}/{len(novas)}: {n['titulo'][:60]}...")
         titulo_pt = traduzir(n["titulo"])
         resumo_pt = traduzir(n["resumo"]) if n["resumo"] else ""
         traduzidas_novas.append({
@@ -255,18 +193,18 @@ def main():
             "titulo_original": n["titulo"],
             "resumo": resumo_pt,
             "link": n["link"],
-            "fonte": n["fonte"],
             "adicionado_em": datetime.now(timezone.utc).isoformat(),
         })
         time.sleep(0.5)
 
-    # Acumula: novas no TOPO (mais recentes primeiro), antigas preservadas abaixo.
+    # Acumula: notícias novas vão para o TOPO da lista (mais recentes primeiro),
+    # seguidas das que já existiam. Nada é removido.
     lista_final = traduzidas_novas + noticias_existentes
 
     saida = {
         "atualizado_em": datetime.now(timezone.utc).isoformat(),
         "ultima_verificacao": datetime.now(timezone.utc).isoformat(),
-        "feeds_monitorados": [f["nome"] for f in FEEDS],
+        "fonte": URL_NOTICIAS,
         "palavras_chave": PALAVRAS_CHAVE,
         "total_noticias": len(lista_final),
         "noticias": lista_final,
@@ -285,6 +223,6 @@ def main():
 if __name__ == "__main__":
     try:
         main()
-    except Exception as e:
-        print(f"Erro inesperado: {e}", file=sys.stderr)
+    except requests.RequestException as e:
+        print(f"Erro ao acessar o site: {e}", file=sys.stderr)
         sys.exit(1)
