@@ -95,25 +95,14 @@ def extrair_noticias(html: str) -> list[dict]:
         # Pulamos parágrafos curtos (metadados de autor/data/"compartilhe"), mas
         # com uma margem maior de tentativas e um limite mais baixo, para não
         # perder resumos legítimos que comecem com frases curtas ou citações.
+# O resumo está em <div class="pt-cv-content"> dentro do mesmo
+        # bloco pai (.pt-cv-content-item) que contém o <h4>.
         resumo = ""
-        proximo = h4.find_next("p")
-        tentativas = 0
-        candidatos = []  # guarda parágrafos vistos, mesmo que curtos, como fallback
-        while proximo and tentativas < 8:
-            texto_p = proximo.get_text(strip=True)
-            if texto_p:
-                candidatos.append(texto_p)
-            if len(texto_p) > 40:
-                resumo = texto_p
-                break
-            proximo = proximo.find_next("p")
-            tentativas += 1
-
-        # Fallback: se nenhum parágrafo "longo" foi achado nas tentativas,
-        # mas existem candidatos curtos, junta os 2 primeiros em vez de
-        # deixar o resumo vazio (melhor ter algo a filtrar do que nada).
-        if not resumo and candidatos:
-            resumo = " ".join(candidatos[:2])
+        bloco_pai = h4.find_parent(class_="pt-cv-content-item")
+        if bloco_pai:
+            div_resumo = bloco_pai.find("div", class_="pt-cv-content")
+            if div_resumo:
+                resumo = div_resumo.get_text(strip=True)
 
         noticias.append({
             "titulo": titulo,
