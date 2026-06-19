@@ -48,6 +48,8 @@ FEEDS = [
 PALAVRAS_CHAVE = [
     "pope leo",
     "leo xiv",
+    "LGBT",
+    "Viganò",
 ]
 
 # Pasta "docs" é a que o GitHub Pages publica por padrão
