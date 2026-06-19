@@ -118,21 +118,16 @@ def bate_palavra_chave(noticia: dict, palavras: list[str]) -> bool:
     return any(p.lower() in texto for p in palavras)
 
 
-# ===================== ACÚMULO (não apaga nada, só adiciona) =====================
-
-def carregar_existente() -> dict:
-    """Carrega o JSON já publicado, se existir. Caso contrário, começa vazio."""
-    if ARQUIVO_SAIDA.exists():
-        try:
-            return json.loads(ARQUIVO_SAIDA.read_text(encoding="utf-8"))
-        except Exception as e:
-            print(f"  [aviso] não consegui ler o JSON existente ({e}); começando do zero.")
-    return {"noticias": []}
-
-
 # ===================== PROGRAMA PRINCIPAL =====================
 
 def main():
+    # Limpa o arquivo antes de começar — garante que conteúdo antigo nunca persiste
+    ARQUIVO_SAIDA.parent.mkdir(parents=True, exist_ok=True)
+    ARQUIVO_SAIDA.write_text(
+        json.dumps({"atualizado_em": datetime.now(timezone.utc).isoformat(), "noticias": []}, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
     print(f"[{datetime.now():%Y-%m-%d %H:%M}] Baixando página: {URL_NOTICIAS}")
     html = baixar_pagina(URL_NOTICIAS)
 
@@ -153,23 +148,11 @@ def main():
     filtradas = [n for n in todas if bate_palavra_chave(n, PALAVRAS_CHAVE)]
     print(f"  -> {len(filtradas)} notícias batem com as palavras-chave: {PALAVRAS_CHAVE}")
 
-    # Carrega o que já foi publicado antes, para não perder nada
-    dados_existentes = carregar_existente()
-    noticias_existentes = dados_existentes.get("noticias", [])
-    links_existentes = {n["link"] for n in noticias_existentes}
-
-    novas = [n for n in filtradas if n["link"] not in links_existentes]
-    print(f"  -> {len(novas)} são novas (ainda não publicadas).")
+    novas = filtradas
+    print(f"  -> {len(novas)} notícia(s) encontrada(s) para publicar.")
 
     if not novas:
-        print("Nenhuma notícia nova hoje. JSON permanece como estava.")
-        # Ainda assim atualiza o timestamp de "última verificação"
-        dados_existentes["ultima_verificacao"] = datetime.now(timezone.utc).isoformat()
-        ARQUIVO_SAIDA.parent.mkdir(parents=True, exist_ok=True)
-        ARQUIVO_SAIDA.write_text(
-            json.dumps(dados_existentes, ensure_ascii=False, indent=2),
-            encoding="utf-8",
-        )
+        print("Nenhuma notícia encontrada com as palavras-chave hoje.")
         return
 
     traduzidas_novas = []
@@ -186,9 +169,7 @@ def main():
         })
         time.sleep(0.5)
 
-    # Acumula: notícias novas vão para o TOPO da lista (mais recentes primeiro),
-    # seguidas das que já existiam. Nada é removido.
-    lista_final = traduzidas_novas + noticias_existentes
+    lista_final = traduzidas_novas
 
     saida = {
         "atualizado_em": datetime.now(timezone.utc).isoformat(),
