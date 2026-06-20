@@ -97,7 +97,7 @@ def extrair_noticias(html: str) -> list[dict]:
         # Pulamos parágrafos curtos (metadados de autor/data/"compartilhe"), mas
         # com uma margem maior de tentativas e um limite mais baixo, para não
         # perder resumos legítimos que comecem com frases curtas ou citações.
-# O resumo está em <div class="pt-cv-content"> dentro do mesmo
+        # O resumo está em <div class="pt-cv-content"> dentro do mesmo
         # bloco pai (.pt-cv-content-item) que contém o <h4>.
         resumo = ""
         bloco_pai = h4.find_parent(class_="pt-cv-content-item")
