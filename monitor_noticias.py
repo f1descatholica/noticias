@@ -200,7 +200,7 @@ def main():
         json.dumps(saida, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
-print(f"\nJSON atualizado: {ARQUIVO_SAIDA}")
+    print(f"\nJSON atualizado: {ARQUIVO_SAIDA}")
     print(f"  -> {len(novas)} notícia(s) nova(s) adicionada(s).")
     print(f"  -> {len(lista_final)} notícia(s) no total (acumulado).")
 
