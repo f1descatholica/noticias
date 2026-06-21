@@ -209,21 +209,22 @@ def main():
     links_historico = {n["link"] for n in historico.get("noticias", [])}
     novas_no_historico = [n for n in lista_final if n["link"] not in links_historico]
 
+    lista_historico = novas_no_historico + historico.get("noticias", [])
+    saida_historico = {
+        "atualizado_em": datetime.now(timezone.utc).isoformat(),
+        "ultima_verificacao": datetime.now(timezone.utc).isoformat(),
+        "total_noticias": len(lista_historico),
+        "noticias": lista_historico,
+    }
+    ARQUIVO_HISTORICO.write_text(
+        json.dumps(saida_historico, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
     if novas_no_historico:
-        lista_historico = novas_no_historico + historico.get("noticias", [])
-        saida_historico = {
-            "atualizado_em": datetime.now(timezone.utc).isoformat(),
-            "total_noticias": len(lista_historico),
-            "noticias": lista_historico,
-        }
-        ARQUIVO_HISTORICO.write_text(
-            json.dumps(saida_historico, ensure_ascii=False, indent=2),
-            encoding="utf-8",
-        )
         print(f"  -> Histórico atualizado: {len(novas_no_historico)} notícia(s) nova(s) adicionada(s).")
-        print(f"  -> {len(lista_historico)} notícia(s) no histórico total.")
     else:
-        print("  -> Histórico sem novidades.")
+        print("  -> Histórico sem novidades, mas data de verificação atualizada.")
+    print(f"  -> {len(lista_historico)} notícia(s) no histórico total.")
 
 
 if __name__ == "__main__":
