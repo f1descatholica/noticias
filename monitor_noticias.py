@@ -36,8 +36,6 @@ PALAVRAS_CHAVE = [
 
 # Pasta "docs" é a que o GitHub Pages publica por padrão
 ARQUIVO_SAIDA = Path(__file__).parent / "docs" / "noticias.json"
-ARQUIVO_HISTORICO = Path(__file__).parent / "docs" / "historico.json"
-URL_HISTORICO = "https://f1descatholica.github.io/noticias/historico.json"
 
 HEADERS = {
     "User-Agent": (
@@ -120,19 +118,6 @@ def bate_palavra_chave(noticia: dict, palavras: list[str]) -> bool:
     return any(p.lower() in texto for p in palavras)
 
 
-# ===================== HISTÓRICO ACUMULADO =====================
-
-def carregar_historico() -> dict:
-    """Carrega o histórico publicado via HTTP. Se falhar, começa vazio."""
-    try:
-        resp = requests.get(URL_HISTORICO, timeout=10)
-        if resp.status_code == 200:
-            return resp.json()
-    except Exception as e:
-        print(f"  [aviso] não consegui carregar histórico ({e}); começando do zero.")
-    return {"noticias": []}
-
-
 # ===================== PROGRAMA PRINCIPAL =====================
 
 def main():
@@ -203,28 +188,6 @@ def main():
     print(f"\nJSON atualizado: {ARQUIVO_SAIDA}")
     print(f"  -> {len(novas)} notícia(s) nova(s) adicionada(s).")
     print(f"  -> {len(lista_final)} notícia(s) no total (acumulado).")
-
-    # Acumula no histórico via HTTP — sem ler arquivo local
-    historico = carregar_historico()
-    links_historico = {n["link"] for n in historico.get("noticias", [])}
-    novas_no_historico = [n for n in lista_final if n["link"] not in links_historico]
-
-    lista_historico = novas_no_historico + historico.get("noticias", [])
-    saida_historico = {
-        "atualizado_em": datetime.now(timezone.utc).isoformat(),
-        "ultima_verificacao": datetime.now(timezone.utc).isoformat(),
-        "total_noticias": len(lista_historico),
-        "noticias": lista_historico,
-    }
-    ARQUIVO_HISTORICO.write_text(
-        json.dumps(saida_historico, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
-    if novas_no_historico:
-        print(f"  -> Histórico atualizado: {len(novas_no_historico)} notícia(s) nova(s) adicionada(s).")
-    else:
-        print("  -> Histórico sem novidades, mas data de verificação atualizada.")
-    print(f"  -> {len(lista_historico)} notícia(s) no histórico total.")
 
 
 if __name__ == "__main__":
