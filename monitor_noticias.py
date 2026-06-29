@@ -32,6 +32,7 @@ PALAVRAS_CHAVE = [
     "leo xiv",
     "LGBT",
     "Viganò",
+    "Postconciliar Rome",
 ]
 
 # Pasta "docs" é a que o GitHub Pages publica por padrão
