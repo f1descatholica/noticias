@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-06-29T13:09:36.553986+00:00",
-  "ultima_verificacao": "2026-06-29T13:09:36.554009+00:00",
+  "atualizado_em": "2026-06-30T11:46:22.556323+00:00",
+  "ultima_verificacao": "2026-06-30T11:46:22.556348+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -9,21 +9,28 @@
     "Viganò",
     "Postconciliar Rome"
   ],
-  "total_noticias": 2,
+  "total_noticias": 3,
   "noticias": [
+    {
+      "titulo": "Quando o Pentecostes é Renomeado como ORGULHO",
+      "titulo_original": "When Pentecost is Rebranded as PRIDE",
+      "resumo": "O relatório de Saltillo é quase impossível de ser lido como um abuso isolado. No Domingo de Pentecostes, o bispo Hilario González García, de Saltillo, teria celebrado missa com grupos LGBT em San ...",
+      "link": "https://www.complicitclergy.com/2026/06/29/when-pentecost-is-rebranded-as-pride/",
+      "adicionado_em": "2026-06-30T11:46:19.058731+00:00"
+    },
+    {
+      "titulo": "Leão Laiciza Padre que ousou chamar Francisco de ‘herege’",
+      "titulo_original": "Leo Laicizes Priest Who Dared to Call Francis a ‘Heretic’",
+      "resumo": "O Papa Leão XIV decretou a destituição do estado clerical de Francisco José Vegara Cerezo, que exercia o cargo de sacerdote da Diocese Espanhola de Orihuela-Alicante, na sequência de um pedido canónico ...",
+      "link": "https://www.complicitclergy.com/2026/06/29/leo-laicizes-priest-who-dared-to-call-francis-a-heretic/",
+      "adicionado_em": "2026-06-30T11:46:20.600216+00:00"
+    },
     {
       "titulo": "Se andar como um maçom…",
       "titulo_original": "If it Walks Like a Freemason…",
       "resumo": "A Roma pós-conciliar está a ameaçar excomungar alguns ou todos os membros da FSSPX porque a sociedade se recusa a aceitar certos resultados do Vaticano II. Esqueça, a sociedade aceita cerca de 95% de ...",
       "link": "https://www.complicitclergy.com/2026/06/28/if-it-walks-like-a-freemason/",
-      "adicionado_em": "2026-06-29T13:09:34.307284+00:00"
-    },
-    {
-      "titulo": "A FSSPX professa a fé católica e Roma chama isso de cisma",
-      "titulo_original": "The SSPX Professes the Catholic Faith and Rome Calls It Schism",
-      "resumo": "A secção mais poderosa da profissão pode ser a sua rejeição do humanismo religioso moderno. A Fraternidade São Pio X enviou a Leão XIV e aos cardeais uma profissão de fé católica...",
-      "link": "https://www.complicitclergy.com/2026/06/25/the-sspx-professes-the-catholic-faith-and-rome-calls-it-schism/",
-      "adicionado_em": "2026-06-29T13:09:36.053836+00:00"
+      "adicionado_em": "2026-06-30T11:46:22.056152+00:00"
     }
   ]
 }
