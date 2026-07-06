@@ -1,4 +1,29 @@
 {
-  "atualizado_em": "2026-07-05T11:06:20.172148+00:00",
-  "noticias": []
+  "atualizado_em": "2026-07-06T12:50:59.821541+00:00",
+  "ultima_verificacao": "2026-07-06T12:50:59.821564+00:00",
+  "fonte": "https://www.complicitclergy.com/news/",
+  "palavras_chave": [
+    "pope leo",
+    "leo xiv",
+    "LGBT",
+    "Viganò",
+    "Postconciliar Rome"
+  ],
+  "total_noticias": 2,
+  "noticias": [
+    {
+      "titulo": "O estrondoso silêncio da mídia católica em relação ao sacrilégio LGBT do cardeal Radcliffe",
+      "titulo_original": "The THUNDEROUS Silence of the Catholic Media Regarding Cardinal Radcliffe’s LGBT Sacrilege",
+      "resumo": "Esta é uma notícia que deveria ter circulado pelo mundo em todos os meios de comunicação católicos. O InfoVaticana publicou esta semana uma matéria com real impacto sobre aquela tão discutida túnica sem costuras...",
+      "link": "https://www.complicitclergy.com/2026/07/04/the-thunderous-silence-of-the-catholic-media-regarding-cardinal-radcliffes-lgbt-sacrilege/",
+      "adicionado_em": "2026-07-06T12:50:57.171345+00:00"
+    },
+    {
+      "titulo": "O primeiro papa americano endurece sua nação em seu 250º aniversário – em vez disso, visita o ponto de acesso de migrantes ilegais na Europa",
+      "titulo_original": "First American Pope Stiffs His Nation on its 250th Birthday — Instead Visits Europe Illegal Migrant Hotspot",
+      "resumo": "O Papa Leão XIV, que discutiu com a administração Trump sobre a sua repressão à imigração, passou o 4 de Julho no sábado no epicentro do debate sobre migração na Europa para homenagear ...",
+      "link": "https://www.complicitclergy.com/2026/07/04/american-pope-stiffs-america-on-its-250th-birthday-instead-visits-europe-illegal-migrant-hotspot/",
+      "adicionado_em": "2026-07-06T12:50:59.321373+00:00"
+    }
+  ]
 }
