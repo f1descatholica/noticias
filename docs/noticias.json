@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-07-06T12:50:59.821541+00:00",
-  "ultima_verificacao": "2026-07-06T12:50:59.821564+00:00",
+  "atualizado_em": "2026-07-07T11:53:10.324704+00:00",
+  "ultima_verificacao": "2026-07-07T11:53:10.324728+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -9,21 +9,35 @@
     "Viganò",
     "Postconciliar Rome"
   ],
-  "total_noticias": 2,
+  "total_noticias": 4,
   "noticias": [
+    {
+      "titulo": "A Sinodalidade destrói a autoridade eclesiástica",
+      "titulo_original": "Synodality Destroys Ecclesiastical Authority",
+      "resumo": "Em 26 de junho, Leão XIV disse num “consistório extraordinário” de cardeais que eles “são chamados a ser construtores da comunhão de Cristo, uma comunhão que toma forma numa Igreja sinodal”. ...",
+      "link": "https://www.complicitclergy.com/2026/07/06/synodality-destroys-ecclesiastical-authority/",
+      "adicionado_em": "2026-07-07T11:53:05.944308+00:00"
+    },
+    {
+      "titulo": "O fracasso de Leão XIV",
+      "titulo_original": "The Failure of Leo XIV",
+      "resumo": "Mostrar a força do poder é fácil, mas não parece a melhor maneira de recuperar a autoridade. Houve um tempo em que a excomunhão poderia trazer um imperador para sua...",
+      "link": "https://www.complicitclergy.com/2026/07/06/the-failure-of-leo-xiv/",
+      "adicionado_em": "2026-07-07T11:53:08.312092+00:00"
+    },
     {
       "titulo": "O estrondoso silêncio da mídia católica em relação ao sacrilégio LGBT do cardeal Radcliffe",
       "titulo_original": "The THUNDEROUS Silence of the Catholic Media Regarding Cardinal Radcliffe’s LGBT Sacrilege",
       "resumo": "Esta é uma notícia que deveria ter circulado pelo mundo em todos os meios de comunicação católicos. O InfoVaticana publicou esta semana uma matéria com real impacto sobre aquela tão discutida túnica sem costuras...",
       "link": "https://www.complicitclergy.com/2026/07/04/the-thunderous-silence-of-the-catholic-media-regarding-cardinal-radcliffes-lgbt-sacrilege/",
-      "adicionado_em": "2026-07-06T12:50:57.171345+00:00"
+      "adicionado_em": "2026-07-07T11:53:09.076255+00:00"
     },
     {
       "titulo": "O primeiro papa americano endurece sua nação em seu 250º aniversário – em vez disso, visita o ponto de acesso de migrantes ilegais na Europa",
       "titulo_original": "First American Pope Stiffs His Nation on its 250th Birthday — Instead Visits Europe Illegal Migrant Hotspot",
       "resumo": "O Papa Leão XIV, que discutiu com a administração Trump sobre a sua repressão à imigração, passou o 4 de Julho no sábado no epicentro do debate sobre migração na Europa para homenagear ...",
       "link": "https://www.complicitclergy.com/2026/07/04/american-pope-stiffs-america-on-its-250th-birthday-instead-visits-europe-illegal-migrant-hotspot/",
-      "adicionado_em": "2026-07-06T12:50:59.321373+00:00"
+      "adicionado_em": "2026-07-07T11:53:09.824540+00:00"
     }
   ]
 }
