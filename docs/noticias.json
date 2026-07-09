@@ -1,4 +1,43 @@
 {
-  "atualizado_em": "2026-07-08T11:07:39.399405+00:00",
-  "noticias": []
+  "atualizado_em": "2026-07-09T12:17:28.281440+00:00",
+  "ultima_verificacao": "2026-07-09T12:17:28.281462+00:00",
+  "fonte": "https://www.complicitclergy.com/news/",
+  "palavras_chave": [
+    "pope leo",
+    "leo xiv",
+    "LGBT",
+    "Viganò",
+    "Postconciliar Rome"
+  ],
+  "total_noticias": 4,
+  "noticias": [
+    {
+      "titulo": "ESCUTE: Excelente homilia do sacerdote da FSSPX após a excomunhão",
+      "titulo_original": "LISTEN: SSPX Priest’s Excellent Homily After The Excommunication",
+      "resumo": "Em resposta às consagrações de quatro bispos da FSSPX na última quarta-feira, o Papa Leão XIV tomou medidas extremamente fortes. Ele declarou que bispos, padres e todos os adeptos formais de...",
+      "link": "https://www.complicitclergy.com/2026/07/08/listen-sspx-priests-excellent-homily-after-the-excommunication/",
+      "adicionado_em": "2026-07-09T12:17:19.842450+00:00"
+    },
+    {
+      "titulo": "Leão nomeia OUTRO bispo ‘sinodal’",
+      "titulo_original": "Leo Appoints ANOTHER ‘Synodal’ Bishop",
+      "resumo": "Quando se trata de nomeações papais, vocês as conhecerão pelos seus frutos. O Papa Leão XIV nomeou o ex-bispo auxiliar da Arquidiocese de Friburgo (Alemanha), Christian Würtz, ...",
+      "link": "https://www.complicitclergy.com/2026/07/07/leo-appoints-yet-another-synodal-bishop/",
+      "adicionado_em": "2026-07-09T12:17:22.109188+00:00"
+    },
+    {
+      "titulo": "A Sinodalidade destrói a autoridade eclesiástica",
+      "titulo_original": "Synodality Destroys Ecclesiastical Authority",
+      "resumo": "Em 26 de junho, Leão XIV disse num “consistório extraordinário” de cardeais que eles “são chamados a ser construtores da comunhão de Cristo, uma comunhão que toma forma numa Igreja sinodal”. ...",
+      "link": "https://www.complicitclergy.com/2026/07/06/synodality-destroys-ecclesiastical-authority/",
+      "adicionado_em": "2026-07-09T12:17:24.634180+00:00"
+    },
+    {
+      "titulo": "O fracasso de Leão XIV",
+      "titulo_original": "The Failure of Leo XIV",
+      "resumo": "Mostrar a força do poder é fácil, mas não parece a melhor maneira de recuperar a autoridade. Houve um tempo em que a excomunhão poderia trazer um imperador à sua...",
+      "link": "https://www.complicitclergy.com/2026/07/06/the-failure-of-leo-xiv/",
+      "adicionado_em": "2026-07-09T12:17:27.781280+00:00"
+    }
+  ]
 }
