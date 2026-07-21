@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-07-16T11:02:42.868822+00:00",
-  "ultima_verificacao": "2026-07-16T11:02:42.868876+00:00",
+  "atualizado_em": "2026-07-21T11:10:47.207574+00:00",
+  "ultima_verificacao": "2026-07-21T11:10:47.207600+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -9,8 +9,15 @@
     "Viganò",
     "Postconciliar Rome"
   ],
-  "total_noticias": 3,
+  "total_noticias": 1,
   "noticias": [
+    {
+      "titulo": "Fiéis leigos católicos enfrentam escandalosa missa do Orgulho de San Diego",
+      "titulo_original": "Faithful Lay Catholics Confront Scandalous San Diego Pride Mass",
+      "resumo": "Durante muitos anos, os fiéis católicos têm sofrido uma perturbadora viragem pró-LGBT em muitas das suas igrejas. Mas ultimamente, em alguns lugares, isso foi completamente exagerado. E muitos católicos têm...",
+      "link": "https://www.complicitclergy.com/2026/07/17/faithful-lay-catholics-confront-scandalous-san-diego-pride-mass/",
+      "adicionado_em": "2026-07-21T11:10:46.707435+00:00"
+    },
     {
       "titulo": "Papa Leão aceita renúncia de bispo investigado por abuso sexual",
       "titulo_original": "Pope Leo Accepts Resignation Of Bishop Investigated For Sexual Abuse",
