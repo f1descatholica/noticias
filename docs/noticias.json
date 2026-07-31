@@ -1,4 +1,29 @@
 {
-  "atualizado_em": "2026-07-30T11:09:11.565880+00:00",
-  "noticias": []
+  "atualizado_em": "2026-07-31T11:30:34.755125+00:00",
+  "ultima_verificacao": "2026-07-31T11:30:34.755148+00:00",
+  "fonte": "https://www.complicitclergy.com/news/",
+  "palavras_chave": [
+    "pope leo",
+    "leo xiv",
+    "LGBT",
+    "Viganò",
+    "Postconciliar Rome"
+  ],
+  "total_noticias": 2,
+  "noticias": [
+    {
+      "titulo": "Cardeal Roche diz que o Papa Leão NÃO ESTÁ mudando as restrições às missas em latim",
+      "titulo_original": "Cardinal Roche Says Pope Leo IS NOT Changing Latin Mass Restrictions",
+      "resumo": "O Cardeal Arthur Roche afirmou que o Papa Leão não tem intenção de mudar as restrições do Papa Francisco à liturgia tradicional. Em uma entrevista recém-publicada ao The Tablet, Cdl. Roche...",
+      "link": "https://www.complicitclergy.com/2026/07/30/cardinal-roche-says-pope-leo-is-not-changing-latin-mass-restrictions/",
+      "adicionado_em": "2026-07-31T11:30:32.504256+00:00"
+    },
+    {
+      "titulo": "O Arcebispo Wester afirma que os muçulmanos têm o “direito dado por Deus” de construir uma mesquita",
+      "titulo_original": "Archbishop Wester Claims Muslims Have ‘God-Given Right’ To Build Mosque",
+      "resumo": "O arcebispo radicalmente pró-LGBT John Wester, de Santa Fé, Novo México, emitiu uma declaração defendendo a construção de uma mesquita dentro da arquidiocese na segunda-feira, em resposta às preocupações de ...",
+      "link": "https://www.complicitclergy.com/2026/07/29/archbishop-wester-claims-muslims-have-god-given-right-to-build-mosque/",
+      "adicionado_em": "2026-07-31T11:30:34.254960+00:00"
+    }
+  ]
 }
