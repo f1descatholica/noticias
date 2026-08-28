@@ -1,6 +1,6 @@
 {
   "atualizado_em": "2026-08-28T20:45:13.372245+00:00",
-  "ultima_verificacao": "2026-08-28T20:45:13.372269+00:00",
+  "ultima_verificacao": "2026-08-28T23:22:07.139723+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -508,5 +508,9 @@
       "link": "https://www.complicitclergy.com/2026/06/17/pray-tell-dear-leo-which-elements-must-catholics-agree-with/",
       "adicionado_em": "2026-06-20T19:46:16.221494+00:00"
     }
-  ]
+  ],
+  "controle": {
+    "bloqueios_consecutivos": 1,
+    "ultimo_aviso_volume": 0
+  }
 }
