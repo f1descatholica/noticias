@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-08-28T20:45:13.372245+00:00",
-  "ultima_verificacao": "2026-09-03T13:21:47.046351+00:00",
+  "atualizado_em": "2026-09-03T20:36:20.533774+00:00",
+  "ultima_verificacao": "2026-09-03T20:36:20.533800+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -9,8 +9,15 @@
     "Viganò",
     "Postconciliar Rome"
   ],
-  "total_noticias": 3,
+  "total_noticias": 72,
   "noticias": [
+    {
+      "titulo": "ASSISTA: Leão está SUPERANDO Francisco no ataque à tradição",
+      "titulo_original": "WATCH: Leo Is OUTPACING Francis In Attacking Tradition",
+      "resumo": "O Papa Leão XIV está a ultrapassar o Papa Francisco e a provar que as advertências do Arcebispo Carlo Maria Viganò estão corretas. O painel examina decisões polêmicas que revelam um padrão: o bispo Lizardo Estrada Herrera foi nomeado ...",
+      "link": "https://www.complicitclergy.com/2026/09/03/watch-leo-is-outpacing-francis-in-attacking-tradition/",
+      "adicionado_em": "2026-09-03T20:36:20.033617+00:00"
+    },
     {
       "titulo": "Pope Leo Implies Latin Mass Lacked Conscious Participation of the Faithful",
       "titulo_original": "Pope Leo Implies Latin Mass Lacked Conscious Participation of the Faithful",
@@ -510,7 +517,7 @@
     }
   ],
   "controle": {
-    "bloqueios_consecutivos": 1,
+    "bloqueios_consecutivos": 0,
     "ultimo_aviso_volume": 0
   }
 }
