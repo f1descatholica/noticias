@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-09-03T20:36:20.533774+00:00",
-  "ultima_verificacao": "2026-09-05T12:28:14.933211+00:00",
+  "atualizado_em": "2026-09-05T20:12:44.806350+00:00",
+  "ultima_verificacao": "2026-09-05T20:12:44.806376+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -9,8 +9,29 @@
     "Viganò",
     "Postconciliar Rome"
   ],
-  "total_noticias": 72,
+  "total_noticias": 75,
   "noticias": [
+    {
+      "titulo": "Bispo Strickland: Por que os líderes da Igreja continuam apoiando a agenda LGBT?",
+      "titulo_original": "Bishop Strickland: Why Do Church Leaders Keep Supporting LGBT Agenda?",
+      "resumo": "Certamente, as Escrituras condenam o orgulho, a injustiça e a negligência dos pobres. Os profetas deixam isso bem claro. Mas a Sagrada Escritura também apresenta claramente Sodoma como uma cidade que havia rejeitado ...",
+      "link": "https://www.complicitclergy.com/2026/09/05/bishop-strickland-why-do-church-leaders-keep-supporting-lgbt-agenda/",
+      "adicionado_em": "2026-09-05T20:12:38.997641+00:00"
+    },
+    {
+      "titulo": "O secretário pessoal de Leo era discípulo de Alaúde, o sacerdote de Chiclayo acusado de abuso sexual",
+      "titulo_original": "Leo’s Personal Secretary Was Disciple of Lute, The Priest from Chiclayo Accused of Sexual Abuse",
+      "resumo": "Edgard Rimaycuna, secretário pessoal de Leão XIV, é discípulo do padre Eleuterio Vásquez, “alaúde”, o padre de Chiclayo acusado de abusar de menores pré-púberes de 9 e 11 anos. Essa informação, ...",
+      "link": "https://www.complicitclergy.com/2026/09/04/leos-personal-secretary-was-disciple-of-lute-the-priest-from-chiclayo-accused-of-sexual-abuse/",
+      "adicionado_em": "2026-09-05T20:12:41.769453+00:00"
+    },
+    {
+      "titulo": "Papa Leão convoca bispos a Roma para consagrar Amoris Laetitia herética",
+      "titulo_original": "Pope Leo Summons Bishops To Rome To Enshrine Heretical Amoris Laetitia",
+      "resumo": "O Papa Leão XIV convidou os presidentes da Conferência Episcopal do mundo a se reunirem em Roma em outubro para \"examinar e discutir os ensinamentos de Amoris Laetitia ...",
+      "link": "https://www.complicitclergy.com/2026/09/04/pope-leo-summons-bishops-to-rome-to-enshrine-heretical-amoris-laetitia/",
+      "adicionado_em": "2026-09-05T20:12:44.306191+00:00"
+    },
     {
       "titulo": "ASSISTA: Leão está SUPERANDO Francisco no ataque à tradição",
       "titulo_original": "WATCH: Leo Is OUTPACING Francis In Attacking Tradition",
@@ -517,7 +538,7 @@
     }
   ],
   "controle": {
-    "bloqueios_consecutivos": 1,
+    "bloqueios_consecutivos": 0,
     "ultimo_aviso_volume": 0
   }
 }
