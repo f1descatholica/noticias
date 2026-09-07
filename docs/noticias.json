@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-09-05T20:12:44.806350+00:00",
-  "ultima_verificacao": "2026-09-06T12:41:33.041606+00:00",
+  "atualizado_em": "2026-09-07T14:53:39.323121+00:00",
+  "ultima_verificacao": "2026-09-07T14:53:39.323142+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -9,8 +9,22 @@
     "Viganò",
     "Postconciliar Rome"
   ],
-  "total_noticias": 75,
+  "total_noticias": 77,
   "noticias": [
+    {
+      "titulo": "O cisma do capital: o alerta do arcebispo Viganò sobre o papa versus o papado",
+      "titulo_original": "The Capital Schism: Archbishop Viganò’s Warning on The Pope vs. The Papacy",
+      "resumo": "O Arcebispo Carlo Maria Viganò lançou um novo ensaio, The Capital Schism, apresentando a sua análise da crise de autoridade na Igreja Católica. Viganò argumenta que gerações de deficientes pós-conciliares...",
+      "link": "https://www.complicitclergy.com/2026/09/06/the-capital-schism-archbishop-viganos-warning-on-the-pope-vs-the-papacy/",
+      "adicionado_em": "2026-09-07T14:53:35.262827+00:00"
+    },
+    {
+      "titulo": "Menor que um único data center, o Vaticano está gastando $ 117 milhões para se tornar neutro em carbono",
+      "titulo_original": "Smaller Than A Single Data Center, The Vatican Is Spending $117 Million To Go Carbon-Neutral",
+      "resumo": "O Papa Leão está pedindo uma ação climática “urgente”, dizendo que a criação de Deus está “clamando.\" O Papa Francisco passou grande parte do seu papado a pressionar a Igreja Católica para tratar as alterações climáticas ...",
+      "link": "https://www.complicitclergy.com/2026/09/06/smaller-than-a-single-data-center-the-vatican-is-spending-117-million-to-go-carbon-neutral/",
+      "adicionado_em": "2026-09-07T14:53:38.822979+00:00"
+    },
     {
       "titulo": "Bispo Strickland: Por que os líderes da Igreja continuam apoiando a agenda LGBT?",
       "titulo_original": "Bishop Strickland: Why Do Church Leaders Keep Supporting LGBT Agenda?",
