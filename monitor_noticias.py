@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """
 Monitor de Notícias - Complicit Clergy -> JSON para o Blogger
@@ -46,6 +45,7 @@ PALAVRAS_CHAVE = [
 
 # Pasta "docs" é a que o GitHub Pages publica por padrão
 ARQUIVO_SAIDA = Path(__file__).parent / "docs" / "noticias.json"
+ARQUIVO_ENTRADA_MANUAL = Path(__file__).parent / "entrada_manual.html"
 
 HEADERS = {
     "User-Agent": (
@@ -246,8 +246,21 @@ def verificar_aviso_volume(controle: dict, total_antes: int, total_agora: int) -
 # ===================== PROGRAMA PRINCIPAL =====================
 
 def main():
-    print(f"[{datetime.now():%Y-%m-%d %H:%M}] Baixando página: {URL_NOTICIAS}")
-    html = baixar_pagina(URL_NOTICIAS)
+    conteudo_manual = ""
+    if ARQUIVO_ENTRADA_MANUAL.exists():
+        conteudo_manual = ARQUIVO_ENTRADA_MANUAL.read_text(encoding="utf-8").strip()
+
+    usando_entrada_manual = bool(conteudo_manual)
+
+    if usando_entrada_manual:
+        print(f"[{datetime.now():%Y-%m-%d %H:%M}] Usando conteúdo colado manualmente em {ARQUIVO_ENTRADA_MANUAL.name} "
+              f"(pulando o download da internet).")
+        html = conteudo_manual
+        # Esvazia imediatamente, para não reprocessar o mesmo conteúdo no futuro
+        ARQUIVO_ENTRADA_MANUAL.write_text("", encoding="utf-8")
+    else:
+        print(f"[{datetime.now():%Y-%m-%d %H:%M}] Baixando página: {URL_NOTICIAS}")
+        html = baixar_pagina(URL_NOTICIAS)
 
     # Diagnóstico: ajuda a identificar se o site está bloqueando o robô
     # (ex: Cloudflare, captcha) em vez de retornar a página real.
@@ -270,8 +283,13 @@ def main():
 
     # Sinal de possível bloqueio: a página não trouxe NENHUMA notícia
     # reconhecível (diferente de "nenhuma bateu com as palavras-chave").
-    pagina_veio_vazia = len(todas) == 0
-    verificar_aviso_bloqueio(controle, pagina_veio_vazia)
+    if usando_entrada_manual:
+        # Conteúdo colado manualmente não reflete o estado real do site,
+        # então não conta para a contagem de dias bloqueado.
+        print("  -> Verificação de bloqueio ignorada nesta execução (conteúdo veio colado manualmente).")
+    else:
+        pagina_veio_vazia = len(todas) == 0
+        verificar_aviso_bloqueio(controle, pagina_veio_vazia)
 
     filtradas = [n for n in todas if bate_palavra_chave(n, PALAVRAS_CHAVE)]
     print(f"  -> {len(filtradas)} notícias batem com as palavras-chave: {PALAVRAS_CHAVE}")
