@@ -5,6 +5,9 @@ on:
     # Roda todo dia às 09:00 UTC (06:00 horário de Brasília)
     - cron: "0 9 * * *"
   workflow_dispatch: {}   # permite rodar manualmente pela aba "Actions" no GitHub
+  push:
+    paths:
+      - "entrada_manual.html"   # dispara assim que você colar conteúdo manual e salvar
 
 permissions:
   contents: write
@@ -34,6 +37,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add docs/noticias.json
+          git add docs/noticias.json entrada_manual.html
           git diff --quiet --cached || git commit -m "Atualiza noticias.json [automático]"
           git push
