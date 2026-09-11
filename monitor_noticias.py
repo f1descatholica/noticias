@@ -41,6 +41,8 @@ PALAVRAS_CHAVE = [
     "LGBT",
     "Viganò",
     "Postconciliar Rome",
+	"internal apostasy",
+	"lay involvement",
 ]
 
 # Pasta "docs" é a que o GitHub Pages publica por padrão
