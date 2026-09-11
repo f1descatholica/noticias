@@ -1,6 +1,6 @@
 {
   "atualizado_em": "2026-09-07T14:53:39.323121+00:00",
-  "ultima_verificacao": "2026-09-11T13:22:00.012109+00:00",
+  "ultima_verificacao": "2026-09-11T15:34:34.889358+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -552,7 +552,7 @@
     }
   ],
   "controle": {
-    "bloqueios_consecutivos": 2,
+    "bloqueios_consecutivos": 3,
     "ultimo_aviso_volume": 0
   }
 }
