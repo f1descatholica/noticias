@@ -1,16 +1,32 @@
 {
-  "atualizado_em": "2026-09-11T20:01:54.962647+00:00",
-  "ultima_verificacao": "2026-09-11T20:01:54.962670+00:00",
+  "atualizado_em": "2026-09-12T12:43:14.166759+00:00",
+  "ultima_verificacao": "2026-09-12T12:43:14.166785+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
     "leo xiv",
     "LGBT",
     "Viganò",
-    "Postconciliar Rome"
+    "Postconciliar Rome",
+    "internal apostasy",
+    "lay involvement"
   ],
-  "total_noticias": 80,
+  "total_noticias": 82,
   "noticias": [
+    {
+      "titulo": "Cardeal Müller adverte sobre “apostasia interna” diante da expansão islâmica",
+      "titulo_original": "Cardinal Müller Warns Of “Internal Apostasy” In Face Of Islamic Expansion",
+      "resumo": "O cardeal Gerhard Ludwig Müller alertou que a expansão do Islã na Europa coincide com uma profunda crise de identidade no Ocidente, que está abandonando suas raízes cristãs. \"Muçulmanos fazem ...",
+      "link": "https://www.complicitclergy.com/2026/09/11/cardinal-muller-warns-of-internal-apostasy-in-face-of-islamic-expansion/",
+      "adicionado_em": "2026-09-12T12:43:10.478210+00:00"
+    },
+    {
+      "titulo": "Sínodo do Vaticano propõe envolvimento leigo na escolha de novos bispos",
+      "titulo_original": "Vatican Synod Proposes Lay Involvement In Choosing New Bishops",
+      "resumo": "O Sínodo publicou dois novos relatórios pedindo que os fiéis leigos e outros grupos eclesiais assumam um papel mais direto nas decisões dos bispos e nas visitas a Roma. Em 8 de setembro de ...",
+      "link": "https://www.complicitclergy.com/2026/09/10/vatican-synod-proposes-lay-involvement-in-choosing-new-bishops/",
+      "adicionado_em": "2026-09-12T12:43:13.666603+00:00"
+    },
     {
       "titulo": "Papa Leão aprova oitavo bispo nomeado pelo governo comunista da China",
       "titulo_original": "Pope Leo Approves Eighth Bishop Appointed By Communist China Government",
@@ -573,7 +589,7 @@
     }
   ],
   "controle": {
-    "bloqueios_consecutivos": 3,
+    "bloqueios_consecutivos": 0,
     "ultimo_aviso_volume": 0
   }
 }
