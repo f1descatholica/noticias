@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-09-12T12:43:14.166759+00:00",
-  "ultima_verificacao": "2026-09-15T12:57:40.573062+00:00",
+  "atualizado_em": "2026-09-15T13:02:02.712122+00:00",
+  "ultima_verificacao": "2026-09-15T13:02:02.712145+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -9,10 +9,26 @@
     "Viganò",
     "Postconciliar Rome",
     "internal apostasy",
-    "lay involvement"
+    "lay involvement",
+    "gender equality",
+    "Panentheism"
   ],
-  "total_noticias": 82,
+  "total_noticias": 84,
   "noticias": [
+    {
+      "titulo": "Relatórios do Sínodo Pedem ‘Igualdade de Gênero’ na Governança da Igreja",
+      "titulo_original": "Synod Reports Call For ‘Gender Equality’ In Church Governance",
+      "resumo": "O Sínodo emitiu dois novos relatórios esta semana que incluem a promoção da \"igualdade de gênero\" em todas as posições dentro da Igreja Católica. No dia 8 de setembro, a Secretaria Geral do Sínodo publicou ...",
+      "link": "https://www.complicitclergy.com/2026/09/14/synod-reports-call-for-gender-equality-in-church-governance/",
+      "adicionado_em": "2026-09-15T13:01:58.573942+00:00"
+    },
+    {
+      "titulo": "A Santa Sé legitima o panenteísmo: uma heresia contra o Criador",
+      "titulo_original": "The Holy See Legitimizes Panentheism: A Heresy Against the Creator",
+      "resumo": "Em 21 de agosto, a Comissão Teológica Internacional publicou um documento intitulado “Cuidar de Nossa Casa Comum: Uma Resposta Responsável e Fraterna ao Deus Trinitário.” Este documento estabelece o ...",
+      "link": "https://www.complicitclergy.com/2026/09/14/the-holy-see-legitimizes-panentheism-a-heresy-against-the-creator/",
+      "adicionado_em": "2026-09-15T13:02:02.211922+00:00"
+    },
     {
       "titulo": "Cardeal Müller adverte sobre “apostasia interna” diante da expansão islâmica",
       "titulo_original": "Cardinal Müller Warns Of “Internal Apostasy” In Face Of Islamic Expansion",
