@@ -43,6 +43,8 @@ PALAVRAS_CHAVE = [
     "Postconciliar Rome",
 	"internal apostasy",
 	"lay involvement",
+	"gender equality",
+	"Panentheism",
 ]
 
 # Pasta "docs" é a que o GitHub Pages publica por padrão
