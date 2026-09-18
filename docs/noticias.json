@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-09-17T14:10:34.610216+00:00",
-  "ultima_verificacao": "2026-09-17T14:10:34.610239+00:00",
+  "atualizado_em": "2026-09-18T13:29:05.288655+00:00",
+  "ultima_verificacao": "2026-09-18T13:29:05.288687+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -13,8 +13,15 @@
     "gender equality",
     "Panentheism"
   ],
-  "total_noticias": 88,
+  "total_noticias": 89,
   "noticias": [
+    {
+      "titulo": "Bispo Strickland cancela documento Leo-Vaticano sobre diálogo inter-religioso",
+      "titulo_original": "Bishop Strickland Calls-Out Leo-Vatican Document On Interreligious Dialogue",
+      "resumo": "O bispo Joseph Strickland, ex-bispo de Tyler, Texas, que foi removido pelo Papa Francisco depois de se recusar a restringir a Missa Latina Tradicional, alertou que um novo Papa Leão XIV ...",
+      "link": "https://www.complicitclergy.com/2026/09/18/bishop-strickland-calls-out-leo-vatican-document-on-interreligious-dialogue/",
+      "adicionado_em": "2026-09-18T13:29:04.788499+00:00"
+    },
     {
       "titulo": "Veja por que eles estão tirando sua missa tradicional em latim",
       "titulo_original": "Here’s Why They Are Taking Away Your Traditional Latin Mass",
