@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-09-18T13:29:05.288655+00:00",
-  "ultima_verificacao": "2026-09-18T13:29:05.288687+00:00",
+  "atualizado_em": "2026-09-19T12:57:46.850002+00:00",
+  "ultima_verificacao": "2026-09-19T12:57:46.850026+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -13,8 +13,15 @@
     "gender equality",
     "Panentheism"
   ],
-  "total_noticias": 89,
+  "total_noticias": 90,
   "noticias": [
+    {
+      "titulo": "Leo Promove Czar da Imigração a Bispo de Joliet",
+      "titulo_original": "Leo Promotes Immigration Czar To Bishop of Joliet",
+      "resumo": "O Papa Leão XIV nomeou o Bispo Brendan J. Cahill de Victoria, Texas, como o novo bispo de Joliet, Illinois. A nomeação foi divulgada em Washington em 17 de setembro pelo arcebispo Gabriele ...",
+      "link": "https://www.complicitclergy.com/2026/09/18/leo-promotes-immigration-czar-to-bishop-of-joliet/",
+      "adicionado_em": "2026-09-19T12:57:46.349837+00:00"
+    },
     {
       "titulo": "Bispo Strickland cancela documento Leo-Vaticano sobre diálogo inter-religioso",
       "titulo_original": "Bishop Strickland Calls-Out Leo-Vatican Document On Interreligious Dialogue",
