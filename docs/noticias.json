@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-09-19T12:57:46.850002+00:00",
-  "ultima_verificacao": "2026-09-22T13:56:34.467295+00:00",
+  "atualizado_em": "2026-09-23T14:07:29.533331+00:00",
+  "ultima_verificacao": "2026-09-23T14:07:29.533354+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -13,8 +13,15 @@
     "gender equality",
     "Panentheism"
   ],
-  "total_noticias": 90,
+  "total_noticias": 91,
   "noticias": [
+    {
+      "titulo": "Quando o primeiro inimigo do papado é o próprio papa",
+      "titulo_original": "When The First Enemy Of The Papacy Is The Pope Himself",
+      "resumo": "Em entrevistas recentemente realizadas com Gaetano Masciullo do Life Site News, o arcebispo Carlo Maria Viganò apresentou uma imagem impressionante e sincera do que ele considera uma profunda crise dentro ...",
+      "link": "https://www.complicitclergy.com/2026/09/22/when-the-first-enemy-of-the-papacy-is-the-pope-himself/",
+      "adicionado_em": "2026-09-23T14:07:29.033159+00:00"
+    },
     {
       "titulo": "Leo Promove Czar da Imigração a Bispo de Joliet",
       "titulo_original": "Leo Promotes Immigration Czar To Bishop of Joliet",
@@ -647,7 +654,7 @@
     }
   ],
   "controle": {
-    "bloqueios_consecutivos": 3,
+    "bloqueios_consecutivos": 0,
     "ultimo_aviso_volume": 0
   }
 }
