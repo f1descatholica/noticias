@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-09-29T15:28:48.069246+00:00",
-  "ultima_verificacao": "2026-10-02T15:30:36.267199+00:00",
+  "atualizado_em": "2026-10-03T14:10:41.381550+00:00",
+  "ultima_verificacao": "2026-10-03T14:10:41.381580+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -13,8 +13,15 @@
     "gender equality",
     "Panentheism"
   ],
-  "total_noticias": 100,
+  "total_noticias": 101,
   "noticias": [
+    {
+      "titulo": "Peregrinos católicos LGBTQ se conectam à história do HIV/AIDS",
+      "titulo_original": "LGBTQ Catholic Pilgrims Connect To History Of HIV/AIDS",
+      "resumo": "Durante três dias, um grupo de católicos LGBTQ, clérigos, religiosos, familiares e outros caminharam pela cidade de Nova York como peregrinos, traçando uma história marcada pelo sofrimento, ministério, exclusão e ...",
+      "link": "https://www.complicitclergy.com/2026/10/02/lgbtq-catholic-pilgrims-connect-to-history-of-hiv-aids/",
+      "adicionado_em": "2026-10-03T14:10:40.881407+00:00"
+    },
     {
       "titulo": "Leão chama as religiões falsas de “frutíferas” e diz a seus seguidores para protegê-las",
       "titulo_original": "Leo Calls False Religions “Fruitful” and Tells Their Followers to Guard Them",
@@ -717,7 +724,7 @@
     }
   ],
   "controle": {
-    "bloqueios_consecutivos": 1,
+    "bloqueios_consecutivos": 0,
     "ultimo_aviso_volume": 0
   }
 }
