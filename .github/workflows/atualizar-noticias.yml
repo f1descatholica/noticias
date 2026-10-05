@@ -12,6 +12,8 @@ on:
 permissions:
   contents: write
   issues: write   # necessário para o robô poder criar os avisos (bloqueio / volume)
+  pages: write    # necessário para publicar o site no GitHub Pages
+  id-token: write # exigido pelo passo de publicação do GitHub Pages
 
 jobs:
   atualizar:
@@ -40,3 +42,11 @@ jobs:
           git add docs/noticias.json entrada_manual.html
           git diff --quiet --cached || git commit -m "Atualiza noticias.json [automático]"
           git push
+
+      - name: Preparar publicação do GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Publicar no GitHub Pages
+        uses: actions/deploy-pages@v4
