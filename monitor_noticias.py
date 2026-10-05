@@ -45,6 +45,7 @@ PALAVRAS_CHAVE = [
 	"lay involvement",
 	"gender equality",
 	"Panentheism",
+	"laity",
 ]
 
 # Pasta "docs" é a que o GitHub Pages publica por padrão
