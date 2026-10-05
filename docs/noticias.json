@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-10-03T14:10:41.381550+00:00",
-  "ultima_verificacao": "2026-10-05T18:05:44.296719+00:00",
+  "atualizado_em": "2026-10-05T20:39:54.181616+00:00",
+  "ultima_verificacao": "2026-10-05T20:39:54.181639+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -11,10 +11,39 @@
     "internal apostasy",
     "lay involvement",
     "gender equality",
-    "Panentheism"
+    "Panentheism",
+    "laity"
   ],
-  "total_noticias": 101,
+  "total_noticias": 105,
   "noticias": [
+    {
+      "titulo": "Leão diz que a Igreja deve ser uma “Casa Aberta” que “Ouve Sem Julgar”",
+      "titulo_original": "Leo Says the Church should be an “Open House” that “Listens Without Judging”",
+      "resumo": "A Igreja fundada por Cristo ouve apenas a Deus, não ao homem, mas o Bispo de Roma tem uma ideia diferente. O Papa Leão disse que quer o ...",
+      "link": "https://www.complicitclergy.com/2026/10/05/leo-says-the-church-should-be-an-open-house-that-listens-without-judging/",
+      "adicionado_em": "2026-10-05T20:39:41.947327+00:00"
+    },
+    {
+      "titulo": "Leão quer que os católicos redescubram o \"potencial ecumênico\" da Confissão Luterana de Augsburgo",
+      "titulo_original": "Leo Wants Catholics to Rediscover the “Ecumenical Potential” of the Lutheran Augsburg Confession",
+      "resumo": "Na quinta-feira, Leão XIV recebeu os líderes da Federação Luterana Mundial em Roma e olhou com entusiasmo para 2030, o quinquagésimo aniversário da Confissão de Augsburgo. Esse seria o ...",
+      "link": "https://www.complicitclergy.com/2026/10/05/leo-wants-catholics-to-rediscover-the-ecumenical-potential-of-the-lutheran-augsburg-confession/",
+      "adicionado_em": "2026-10-05T20:39:46.134234+00:00"
+    },
+    {
+      "titulo": "Sínodo propõe reforma do direito canônico para expandir o papel dos leigos",
+      "titulo_original": "Synod Proposes Reforming Canon Law To Expand Role Of Laity",
+      "resumo": "A Secretaria Geral do Sínodo publicou o Relatório Final da Comissão Canônica para uma Igreja Sinodal, um documento de trabalho que propõe alterar vários cânones do Código ...",
+      "link": "https://www.complicitclergy.com/2026/10/02/synod-proposes-reforming-canon-law-to-expand-role-of-laity/",
+      "adicionado_em": "2026-10-05T20:39:49.695249+00:00"
+    },
+    {
+      "titulo": "Leigos e clérigos da Arquidiocese de Detroit se reúnem para doutrinação sinodal sobre mudanças climáticas",
+      "titulo_original": "Laity, Clergy In Archdiocese of Detroit Gather For Synodal Climate Change Indoctrination",
+      "resumo": "Estudantes, paroquianos e pastores da Arquidiocese de Detroit se reuniram em 30 de setembro no Seminário Maior do Sagrado Coração para discutir o papel da Igreja Católica no cuidado com o meio ambiente e como ...",
+      "link": "https://www.complicitclergy.com/2026/10/02/laity-clergy-in-archdiocese-of-detroit-gather-for-synodal-climate-change-indoctrination/",
+      "adicionado_em": "2026-10-05T20:39:53.681460+00:00"
+    },
     {
       "titulo": "Peregrinos católicos LGBTQ se conectam à história do HIV/AIDS",
       "titulo_original": "LGBTQ Catholic Pilgrims Connect To History Of HIV/AIDS",
