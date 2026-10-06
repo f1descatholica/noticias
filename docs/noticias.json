@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-10-05T20:39:54.181616+00:00",
-  "ultima_verificacao": "2026-10-05T21:29:28.064669+00:00",
+  "atualizado_em": "2026-10-06T15:45:07.071995+00:00",
+  "ultima_verificacao": "2026-10-06T15:45:07.072019+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -14,8 +14,15 @@
     "Panentheism",
     "laity"
   ],
-  "total_noticias": 105,
+  "total_noticias": 106,
   "noticias": [
+    {
+      "titulo": "Pena de morte: como o Papa Leão escolheu a heresia sobre a Igreja",
+      "titulo_original": "Capital Punishment: How Pope Leo Chose Heresy Over The Church",
+      "resumo": "Leão XIV rejeitou publicamente o ensinamento da Igreja Católica de que a pena capital é legítima sob certas condições. Este ensinamento, tendo sido proposto para nossa crença pelo universal ...",
+      "link": "https://www.complicitclergy.com/2026/10/06/capital-punishment-how-pope-leo-chose-heresy-over-the-church/",
+      "adicionado_em": "2026-10-06T15:45:06.571852+00:00"
+    },
     {
       "titulo": "Leão diz que a Igreja deve ser uma “Casa Aberta” que “Ouve Sem Julgar”",
       "titulo_original": "Leo Says the Church should be an “Open House” that “Listens Without Judging”",
