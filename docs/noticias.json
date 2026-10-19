@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-10-17T21:56:43.763823+00:00",
-  "ultima_verificacao": "2026-10-17T21:56:43.763842+00:00",
+  "atualizado_em": "2026-10-19T20:33:57.017968+00:00",
+  "ultima_verificacao": "2026-10-19T20:33:57.017991+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -17,8 +17,22 @@
     "sex",
     "sexual"
   ],
-  "total_noticias": 124,
+  "total_noticias": 126,
   "noticias": [
+    {
+      "titulo": "70% das reivindicações de asilados marroquinos em Ceuta após a entrada em massa citam perseguição por orientação sexual",
+      "titulo_original": "70% Of Moroccan Asylee Claims In Ceuta After Mass Entry Cite Persecution Over Sexual Orientation",
+      "resumo": "No início deste ano, relatamos como os bispos espanhóis foram cúmplices na invasão em massa de estrangeiros marroquinos em Ceuta.  Agora aprendemos que a maioria desses ...",
+      "link": "https://www.complicitclergy.com/2026/10/19/70-of-moroccan-asylee-claims-in-ceuta-after-mass-entry-cite-persecution-over-sexual-orientation/",
+      "adicionado_em": "2026-10-19T20:33:53.592846+00:00"
+    },
+    {
+      "titulo": "Cardeal Parolin enfrenta escrutínio por comentários sobre o pontificado do Papa Leão XIV",
+      "titulo_original": "Cardinal Parolin Faces Scrutiny for Remarks on Pope Leo XIV’s Pontificate",
+      "resumo": "O secretário de Estado do Vaticano, cardeal Pietro Parolin, está enfrentando escrutínio depois de sugerir que o pontificado do Papa Leão XIV pode precisar ser \"recalibrado\". - Na quinta-feira, o cardeal Parolin disse que era muito ...",
+      "link": "https://www.complicitclergy.com/2026/10/19/cardinal-parolin-faces-scrutiny-for-remarks-on-pope-leo-xivs-pontificate/",
+      "adicionado_em": "2026-10-19T20:33:56.517811+00:00"
+    },
     {
       "titulo": "10 bispos italianos participam da Conferência Nacional sobre ‘Ministério Pastoral’ LGBT",
       "titulo_original": "10 Italian Bishops Attend National Conference on LGBT ‘Pastoral Ministry’",
