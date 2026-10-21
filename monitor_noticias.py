@@ -49,6 +49,7 @@ PALAVRAS_CHAVE = [
 	"Freemason",
 	"sex",
 	"sexual",
+	"Synodal Church",
 ]
 
 # Pasta "docs" é a que o GitHub Pages publica por padrão
