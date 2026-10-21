@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-10-19T20:33:57.017968+00:00",
-  "ultima_verificacao": "2026-10-20T14:10:34.164754+00:00",
+  "atualizado_em": "2026-10-21T20:16:42.015537+00:00",
+  "ultima_verificacao": "2026-10-21T20:16:42.015561+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -15,10 +15,25 @@
     "laity",
     "Freemason",
     "sex",
-    "sexual"
+    "sexual",
+    "Synodal Church"
   ],
-  "total_noticias": 126,
+  "total_noticias": 128,
   "noticias": [
+    {
+      "titulo": "Partido Comunista Chinês Obtém Seu Bispo – Roma Fornece A Bênção",
+      "titulo_original": "Chinese Communist Party Gets Its Bishop – Rome Supplies The Blessing",
+      "resumo": "Em 15 de outubro, o Vaticano anunciou que Inácio Ding Zuyao, um padre de 40 anos da província chinesa de Jiangsu, havia sido consagrado bispo de Haimen. Leão XIV, de acordo com a Santa Sé, ...",
+      "link": "https://www.complicitclergy.com/2026/10/21/chinese-communist-party-gets-its-bishop-rome-supplies-the-blessing/",
+      "adicionado_em": "2026-10-21T20:16:37.602928+00:00"
+    },
+    {
+      "titulo": "Rainhas Dançantes da Igreja Sinodal de Leão",
+      "titulo_original": "Dancing Queens of Leo’s Synodal Church",
+      "resumo": "É impossível ignorar - fotos inundam as mídias sociais de padres dançarinos e prelados empinados - uma verdadeira linha de coro de clérigos que dançam pela nave, pulando para cima e para baixo como reprimidos ...",
+      "link": "https://www.complicitclergy.com/2026/10/19/dancing-queens-of-leos-synodal-church/",
+      "adicionado_em": "2026-10-21T20:16:41.515397+00:00"
+    },
     {
       "titulo": "70% das reivindicações de asilados marroquinos em Ceuta após a entrada em massa citam perseguição por orientação sexual",
       "titulo_original": "70% Of Moroccan Asylee Claims In Ceuta After Mass Entry Cite Persecution Over Sexual Orientation",
