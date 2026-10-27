@@ -52,6 +52,7 @@ PALAVRAS_CHAVE = [
 	"Synodal Church",
 	"Communism",
 	"Communist",
+	"abuse",
 ]
 
 # Pasta "docs" é a que o GitHub Pages publica por padrão
