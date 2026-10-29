@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-10-27T20:17:52.284754+00:00",
-  "ultima_verificacao": "2026-10-28T15:47:39.354129+00:00",
+  "atualizado_em": "2026-10-29T21:17:30.480148+00:00",
+  "ultima_verificacao": "2026-10-29T21:17:30.480173+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -21,8 +21,50 @@
     "Communist",
     "abuse"
   ],
-  "total_noticias": 141,
+  "total_noticias": 147,
   "noticias": [
+    {
+      "titulo": "Bispo polonês condenado por não denunciar abuso clerical de menores",
+      "titulo_original": "Polish Bishop Convicted of Failing to Report Clergy Abuse of Minors",
+      "resumo": "O bispo polonês Andrzej Jez foi condenado na quinta-feira por não notificar as autoridades sobre o abuso sexual de menores por dois padres ‌de sua diocese, no caso de maior destaque de ...",
+      "link": "https://www.complicitclergy.com/2026/10/29/polish-bishop-convicted-of-failing-to-report-clergy-abuse-of-minors/",
+      "adicionado_em": "2026-10-29T21:17:12.400837+00:00"
+    },
+    {
+      "titulo": "Cardeal Cupich apresenta prêmio ao líder do ministério LGBTQ+",
+      "titulo_original": "Cardinal Cupich Presents Award To LGBTQ+ Ministry Leader",
+      "resumo": "O cardeal Blase Cupich, de Chicago, entregou um prêmio a um líder de um ministério pró-LGBT que promove \"hospitalidade radical\" e \"círculos de escuta sinodal\" para católicos LGBTQ+ sem qualquer menção pública...",
+      "link": "https://www.complicitclergy.com/2026/10/29/cardinal-cupich-presents-award-to-lgbtq-ministry-leader/",
+      "adicionado_em": "2026-10-29T21:17:15.954168+00:00"
+    },
+    {
+      "titulo": "Diocese de Metuchen processada por alegações de abuso de padres",
+      "titulo_original": "Diocese of Metuchen Sued Over Priest Abuse Claims",
+      "resumo": "Dois homens estão processando a Diocese de Metuchen, alegando que foram abusados sexualmente quando crianças por um padre que já enfrentou acusações de molestar um menino do bairro de Middlesex. O ...",
+      "link": "https://www.complicitclergy.com/2026/10/29/diocese-of-metuchen-sued-over-priest-abuse-claims/",
+      "adicionado_em": "2026-10-29T21:17:19.604902+00:00"
+    },
+    {
+      "titulo": "Os contos escorregadios do padre James Martin",
+      "titulo_original": "The Slippery Tales of Fr. James Martin",
+      "resumo": "O Pe. James Martin, S.J., quer que você acredite que os homossexuais ouvem trovões \"implacáveis\" do púlpito contra a homossexualidade. E esse trovão implacável mantém os homossexuais longe da Igreja. Em um ...",
+      "link": "https://www.complicitclergy.com/2026/10/28/the-slippery-tales-of-fr-james-martin/",
+      "adicionado_em": "2026-10-29T21:17:23.042013+00:00"
+    },
+    {
+      "titulo": "BLASFÊMIA: Divulgação do Pe. James Martin Publica um \"Confitador LGBTQ\" Invocando \"Santos Queer\"",
+      "titulo_original": "BLASPHEMY: Fr. James Martin’s Outreach Publishes an “LGBTQ Confiteor” Invoking “Queer Saints”",
+      "resumo": "Outreach, o apostolado dirigido aos católicos LGBT promovido pelo jesuíta James Martin, publicou uma adaptação do Confiteor, a oração penitencial que os fiéis recitam no início de ...",
+      "link": "https://www.complicitclergy.com/2026/10/28/blasphemy-fr-james-martins-outreach-publishes-an-lgbtq-confiteor-invoking-queer-saints/",
+      "adicionado_em": "2026-10-29T21:17:26.494342+00:00"
+    },
+    {
+      "titulo": "Papa Leão XIV afirma que ‘não existe uma guerra santa’",
+      "titulo_original": "Pope Leo XIV Claims ‘No Such Thing as a Holy War’",
+      "resumo": "O Catholic Herald relata: Dirigindo-se à reunião anual de paz de Assis em seu 40º aniversário, o Papa Leão XIV atestou que não pode haver possibilidade de uma guerra santa e instou ...",
+      "link": "https://www.complicitclergy.com/2026/10/27/pope-leo-xiv-claims-no-such-thing-as-a-holy-war/",
+      "adicionado_em": "2026-10-29T21:17:29.979956+00:00"
+    },
     {
       "titulo": "Juiz Rejeita Proposta da Diocese de Nashville para Eliminar Processo de Encobrimento de Abuso",
       "titulo_original": "Judge Rejects Nashville Diocese’s Bid to Throw Out Abuse Cover-Up Suit",
