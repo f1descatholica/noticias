@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-10-29T21:17:30.480148+00:00",
-  "ultima_verificacao": "2026-11-01T15:52:07.485918+00:00",
+  "atualizado_em": "2026-11-02T13:46:03.126443+00:00",
+  "ultima_verificacao": "2026-11-02T13:46:03.126469+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -21,8 +21,36 @@
     "Communist",
     "abuse"
   ],
-  "total_noticias": 147,
+  "total_noticias": 151,
   "noticias": [
+    {
+      "titulo": "Dioceses alemãs publicam manual de bênçãos para pessoas do mesmo sexo apesar da repreensão do Vaticano",
+      "titulo_original": "German Dioceses Publishes Same-Sex Blessing Handbook Despite Vatican Rebuke",
+      "resumo": "Quando os bispos da Alemanha foram repreendidos por um alto funcionário do Vaticano por causa de um manual para abençoar casais do mesmo sexo, a discussão pública foi seguida com interesse por católicos de língua alemã. \"Considerando que o Vaticano ...",
+      "link": "https://www.complicitclergy.com/2026/11/01/german-dioceses-publishes-same-sex-blessing-handbook-despite-vatican-rebuke/",
+      "adicionado_em": "2026-11-02T13:45:50.122585+00:00"
+    },
+    {
+      "titulo": "Outro padre de Chicago removido do ministério devido a alegações de abuso",
+      "titulo_original": "Another Chicago Priest Removed From Ministry Due To Abuse Allegations",
+      "resumo": "A Arquidiocese de Chicago retirou temporariamente um padre do ministério depois de receber uma alegação de contato físico inadequado. A alegação envolveu um adulto. O reverendo Samson Mukundi estava servindo como pastor ...",
+      "link": "https://www.complicitclergy.com/2026/11/01/another-chicago-priest-removed-from-ministry-due-to-abuse-allegations/",
+      "adicionado_em": "2026-11-02T13:45:54.030144+00:00"
+    },
+    {
+      "titulo": "Leo se encontra com ativistas radicais anti-ICE no Vaticano",
+      "titulo_original": "Leo Meets With Radical Anti-ICE Activists at Vatican",
+      "resumo": "Após sua audiência geral semanal na quarta-feira, o Papa Leão XIV se reuniu com ativistas clericais e leigos para imigrantes detidos pelo ICE em sua cidade natal, Chicago. Depois de sua audiência de 28 de outubro, ...",
+      "link": "https://www.complicitclergy.com/2026/10/31/leo-meets-with-radical-anti-ice-activists-at-vatican/",
+      "adicionado_em": "2026-11-02T13:45:58.176824+00:00"
+    },
+    {
+      "titulo": "Leo nomeia mais radicais para a liderança da sinodalidade",
+      "titulo_original": "Leo Appoints More Radicals To Synodality Leadership",
+      "resumo": "Foi outra sexta-feira esplêndida na Igreja do Discernimento Perpétuo. Em 30 de outubro, Leão XIV nomeou o padre jesuíta Giacomo Costa e a irmã salesiana Elena Massimi como subsecretários do ...",
+      "link": "https://www.complicitclergy.com/2026/10/31/leo-appoints-more-radicals-to-synodality-leadership/",
+      "adicionado_em": "2026-11-02T13:46:02.626293+00:00"
+    },
     {
       "titulo": "Bispo polonês condenado por não denunciar abuso clerical de menores",
       "titulo_original": "Polish Bishop Convicted of Failing to Report Clergy Abuse of Minors",
