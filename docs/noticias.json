@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-11-02T13:46:03.126443+00:00",
-  "ultima_verificacao": "2026-11-02T13:46:03.126469+00:00",
+  "atualizado_em": "2026-11-07T14:58:41.223774+00:00",
+  "ultima_verificacao": "2026-11-07T14:58:41.223799+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "pope leo",
@@ -19,10 +19,75 @@
     "Synodal Church",
     "Communism",
     "Communist",
-    "abuse"
+    "abuse",
+    "climate change",
+    "same-sex"
   ],
-  "total_noticias": 151,
+  "total_noticias": 160,
   "noticias": [
+    {
+      "titulo": "Almas ou Subsídios? A USCCB e a CRS pedem mais dinheiro para as mudanças climáticas na COP31.",
+      "titulo_original": "Souls or Subsidies? USCCB and CRS Call for More Climate Change Money  at COP31.",
+      "resumo": "Em 6 de novembro de 2026, o arcebispo Shelton J. Fabre (presidente do Comitê de Justiça Doméstica e Desenvolvimento Humano da USCCB), o bispo A. Elias Zaidan (presidente do Comitê de Justiça Internacional...",
+      "link": "https://www.complicitclergy.com/2026/11/07/souls-or-subsidies-usccb-and-crs-call-for-more-climate-change-money-at-cop31/",
+      "adicionado_em": "2026-11-07T14:58:06.874011+00:00"
+    },
+    {
+      "titulo": "Papa Leão dá o melhor post para feminista que apoia bênçãos gays",
+      "titulo_original": "Pope Leo Gives Top Post to Feminist who Supports Gay Blessings",
+      "resumo": "O Papa Leão XIV nomeou a teóloga chilena Claudia Leal Luna como subsecretária do Dicastério para a Promoção do Desenvolvimento Humano Integral, colocando uma crítica vocal da rejeição da Igreja em 2021 de ...",
+      "link": "https://www.complicitclergy.com/2026/11/06/pope-leo-gives-top-post-to-feminist-who-supports-gay-blessings/",
+      "adicionado_em": "2026-11-07T14:58:11.463476+00:00"
+    },
+    {
+      "titulo": "Sacerdote de Baltimore se declara culpado de agressão sexual",
+      "titulo_original": "Baltimore Priest Pleads Guilty To Sexual Assault",
+      "resumo": "Laurence LaPointe, 81 anos, de Putnam, Connecticut, declarou-se culpado e foi condenado por abusar sexualmente de um menino em meados da década de 1970, enquanto servia como capelão e professor de religião em Gilman ...",
+      "link": "https://www.complicitclergy.com/2026/11/06/baltimore-priest-pleads-guilty-to-sexual-assault/",
+      "adicionado_em": "2026-11-07T14:58:15.802789+00:00"
+    },
+    {
+      "titulo": "ESCÂNDALO: Massa Funerária da Catedral de Toledo Planejada por Homem em Casamento do Mesmo Sexo",
+      "titulo_original": "SCANDAL: Toledo Cathedral Funeral Mass Planned Man In Same-Sex Marriage",
+      "resumo": "A Catedral Católica de Toledo, Ohio, está pronta para oferecer um funeral católico para um homem que viveu em um \"casamento\" do mesmo sexo. O funeral será em violação direta de ...",
+      "link": "https://www.complicitclergy.com/2026/11/06/scandal-cathedral-funeral-mass-planned-man-in-same-sex-marriage/",
+      "adicionado_em": "2026-11-07T14:58:20.226391+00:00"
+    },
+    {
+      "titulo": "Vítima do cardeal Bernardin se manifesta",
+      "titulo_original": "Cardinal Bernardin’s Victim Speaks-Out",
+      "resumo": "Semana passada eu (Fr. David Nix) teve um jantar de quatro horas com a vítima de Bernardin e seu marido. Ela agora tem 80 anos. O Abuso do Ritual Satânico aconteceu com ela ...",
+      "link": "https://www.complicitclergy.com/2026/11/05/cardinal-bernardins-victim-speaks-out/",
+      "adicionado_em": "2026-11-07T14:58:25.005248+00:00"
+    },
+    {
+      "titulo": "Bispos irlandeses pressionam delegação da COP31 a acelerar proibição de combustíveis fósseis",
+      "titulo_original": "Irish Bishops Lobby COP31 Delegation To Accelerated Ban On Fossil Fuels",
+      "resumo": "Quantas almas os bispos esperam que sejam salvas com esta medida? Os bispos pediram à Irlanda que mostre uma forte liderança no combate às mudanças climáticas antes da COP31, pedindo ...",
+      "link": "https://www.complicitclergy.com/2026/11/05/irish-bishops-lobby-cop31-delegation-to-accelerated-ban-on-fossil-fuels/",
+      "adicionado_em": "2026-11-07T14:58:29.227749+00:00"
+    },
+    {
+      "titulo": "Vamos encarar: nossos bispos são democratas!",
+      "titulo_original": "Let’s Face It: Our Bishops Are Democrats!",
+      "resumo": "Na sexta-feira, enquanto o Papa Leão XIV se reunia com americanos que se opunham à imposição da imigração dos EUA em Roma, o arcebispo Edward Weisenburger juntou-se a uma vigília anti-Imigração e Alfândega (ICE) em Detroit. Uma ...",
+      "link": "https://www.complicitclergy.com/2026/11/05/90602/",
+      "adicionado_em": "2026-11-07T14:58:32.996049+00:00"
+    },
+    {
+      "titulo": "Diocese de Cheyenne nega conhecimento de suposto abuso",
+      "titulo_original": "Cheyenne Diocese Denies Knowledge of Alleged Abuse",
+      "resumo": "A Diocese Católica de Cheyenne e a Igreja de Nossa Senhora de Fátima de Casper negam a responsabilidade pelo alegado abuso sexual de três ex-paroquianos que dizem ter sido agredidos como ...",
+      "link": "https://www.complicitclergy.com/2026/11/04/cheyenne-diocese-denies-knowledge-of-alleged-abuse/",
+      "adicionado_em": "2026-11-07T14:58:37.036534+00:00"
+    },
+    {
+      "titulo": "Sem EXCOMUNHÃO: várias dioceses alemãs implantam manual para abençoar casais do mesmo sexo, APESAR da rejeição de Roma",
+      "titulo_original": "NO EXCOMMUNICATION: Multiple German Dioceses Deploy Manual For Blessings Same-Sex Couples DESPITE Rome’s Rejection",
+      "resumo": "Várias dioceses alemãs incorporaram oficialmente o manual Segen gibt der Liebe Kraft (\"Bênção dá força ao amor\") em suas diretrizes pastorais, que incluem cerimônias de bênção para casais do mesmo sexo e ...",
+      "link": "https://www.complicitclergy.com/2026/11/04/no-excommunication-multiple-german-dioceses-deploy-manual-for-blessings-same-sex-couples-despite-romes-rejection/",
+      "adicionado_em": "2026-11-07T14:58:40.723626+00:00"
+    },
     {
       "titulo": "Dioceses alemãs publicam manual de bênçãos para pessoas do mesmo sexo apesar da repreensão do Vaticano",
       "titulo_original": "German Dioceses Publishes Same-Sex Blessing Handbook Despite Vatican Rebuke",
