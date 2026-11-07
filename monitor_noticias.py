@@ -53,6 +53,8 @@ PALAVRAS_CHAVE = [
 	"Communism",
 	"Communist",
 	"abuse",
+	"climate change",
+	"same-sex",
 ]
 
 # Pasta "docs" é a que o GitHub Pages publica por padrão
