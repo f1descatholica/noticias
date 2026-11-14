@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "2026-11-10T17:35:49.320689+00:00",
-  "ultima_verificacao": "2026-11-10T17:35:49.320713+00:00",
+  "atualizado_em": "2026-11-14T21:49:09.532170+00:00",
+  "ultima_verificacao": "2026-11-14T21:49:09.532198+00:00",
   "fonte": "https://www.complicitclergy.com/news/",
   "palavras_chave": [
     "abuse",
@@ -23,10 +23,18 @@
     "sex",
     "sexual",
     "Synodal Church",
-    "Viganò"
+    "Viganò",
+    "women priests"
   ],
-  "total_noticias": 170,
+  "total_noticias": 171,
   "noticias": [
+    {
+      "titulo": "O Cardeal Marx diz que o apoio às mulheres sacerdotes não impede mais que elas se tornem bispas",
+      "titulo_original": "Cardinal Marx Says Support for Women Priests No Longer Rules Out Becoming a Bishop",
+      "resumo": "No dia 4 de novembro de 2026, o Cardeal Reinhard Marx se reuniu com a romancista alemã Nora Bossong na Academia Católica de Munique para um debate sobre o futuro da Igreja. O...",
+      "link": "https://www.complicitclergy.com/2026/11/14/cardinal-marx-says-support-for-women-priests-no-longer-rules-out-becoming-a-bishop/",
+      "adicionado_em": "2026-11-14T21:49:09.032013+00:00"
+    },
     {
       "titulo": "Quando Leo chega à Argentina, cartazes pedem que ele demita Fernández",
       "titulo_original": "As Leo Arrives In Argentina, Posters Line Streets Calling For Him To Fire Fernández",
