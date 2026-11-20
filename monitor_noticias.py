@@ -58,6 +58,7 @@ PALAVRAS_CHAVE = [
 "Synodal Church",
 "Viganò",
 "women priests",
+"pagan ritual",
 ]
 
 # Pasta "docs" é a que o GitHub Pages publica por padrão
