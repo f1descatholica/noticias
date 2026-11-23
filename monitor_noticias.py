@@ -43,6 +43,7 @@ PALAVRAS_CHAVE = [
 "Freemason",
 "gender equality",
 "internal apostasy",
+"homosexual",
 "laity",
 "lay involvement",
 "leo xiv",
